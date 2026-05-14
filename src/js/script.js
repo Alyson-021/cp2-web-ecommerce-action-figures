@@ -98,3 +98,18 @@ if(divCarrinho){
         `;
     });
 }
+
+const total = carrinho.reduce((acumulador, item) => {
+
+    return acumulador + item.preco;
+
+}, 0);
+
+const totalHTML = document.getElementById("total");
+
+if(totalHTML){
+
+    totalHTML.innerHTML = `
+        Total: R$ ${total}
+    `;
+}
