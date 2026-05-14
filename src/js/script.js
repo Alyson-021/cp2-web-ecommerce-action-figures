@@ -41,3 +41,27 @@ const produtos = [
     }
 
 ];
+
+const sectionProdutos = document.getElementById("produtos");
+
+if(sectionProdutos){
+
+    produtos.forEach(produto => {
+
+        sectionProdutos.innerHTML += `
+        
+            <div class="card">
+
+                <img src="${produto.imagem}" alt="${produto.nome}">
+
+                <h2>${produto.nome}</h2>
+
+                <p>R$ ${produto.preco}</p>
+
+                <button>Comprar</button>
+
+            </div>
+        
+        `;
+    });
+}
