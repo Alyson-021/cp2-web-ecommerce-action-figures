@@ -65,3 +65,36 @@ if(sectionProdutos){
         `;
     });
 }
+
+const carrinho = [
+    {
+        produto: "Batman",
+        preco: 300
+    },
+
+    {
+        produto: "Naruto",
+        preco: 250
+    },
+
+    {
+        produto: "Goku",
+        preco: 400
+    }
+];
+
+const divCarrinho = document.getElementById("carrinho");
+
+if(divCarrinho){
+
+    carrinho.forEach(item => {
+
+        divCarrinho.innerHTML += `
+        
+            <p>
+                ${item.produto} - R$ ${item.preco}
+            </p>
+        
+        `;
+    });
+}
