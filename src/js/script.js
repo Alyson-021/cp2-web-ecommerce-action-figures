@@ -113,3 +113,21 @@ if(totalHTML){
         Total: R$ ${total}
     `;
 }
+
+const btnDesconto = document.getElementById("btnDesconto");
+
+const totalDescontoHTML = document.getElementById("totalDesconto");
+
+if(btnDesconto){
+
+    btnDesconto.addEventListener("click", () => {
+
+        const desconto = total * 0.9;
+
+        totalDescontoHTML.innerHTML = `
+        
+            Total com desconto: R$ ${desconto.toFixed(2)}
+        
+        `;
+    });
+}
