@@ -26,5 +26,4 @@ Checkpoint 2 - Web Development - FIAP
 
 GitHub Pages:
 https://alyson-021.github.io/cp2-web-ecommerce-action-figures/
-
 ---
