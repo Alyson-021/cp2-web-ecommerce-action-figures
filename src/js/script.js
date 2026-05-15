@@ -68,17 +68,17 @@ if(sectionProdutos){
 
 const carrinho = [
     {
-        produto: "Batman",
+        produto: "Dante",
         preco: 300
     },
 
     {
-        produto: "Naruto",
+        produto: "Ellie",
         preco: 250
     },
 
     {
-        produto: "Goku",
+        produto: "Kratos",
         preco: 400
     }
 ];

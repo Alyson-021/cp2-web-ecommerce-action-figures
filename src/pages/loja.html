@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
 
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Carrinho</h1>
+
+        <h1>Action Figures Store</h1>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./loja.html">Loja</a>
+            <a href="./sobre.html">Sobre</a>
+        </nav>
+
     </header>
 
-    <main>
+    <main class="container-loja">
 
-        <div id="carrinho"></div>
+        <section class="carrinho-container">
 
-        <h2 id="total"></h2>
+            <h2>Itens do Carrinho</h2>
+
+            <div id="carrinho"></div>
+
+        </section>
+
+        <section class="resumo-container">
+
+            <h2 id="total"></h2>
+
+            <button id="btnDesconto">
+                Aplicar 10% OFF
+            </button>
+
+            <h2 id="totalDesconto"></h2>
+
+        </section>
 
     </main>
 
+    <footer>
+
+        <p>
+            © 2026 Action Figures Store - FIAP Web Development
+        </p>
+
+    </footer>
+
     <script src="../js/script.js"></script>
+
 </body>
 </html>
