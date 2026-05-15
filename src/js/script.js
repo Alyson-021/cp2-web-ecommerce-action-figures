@@ -13,31 +13,31 @@ const produtos = [
     {
         nome: "Dante DMC 5",
         preco: 299.99,
-        imagem: "./src/assets/img/dante.jpeg"
+        imagem: "/src/assets/img/dante.jpeg"
     },
 
     {
         nome: "Ellie TLOU 2",
-        preco: 349.90,
-        imagem: "./src/assets/img/ellie.jpeg"
+        preco: 349.99,
+        imagem: "/src/assets/img/ellie.jpeg"
     },
 
     {
         nome: "Kratos GOW",
-        preco: 399.90,
-        imagem: "./src/assets/img/kratos.jpeg"
+        preco: 399.99,
+        imagem: "/src/assets/img/kratos.jpeg"
     },
 
     {
         nome: "Leon RE 4",
-        preco: 279.90,
-        imagem: "./src/assets/img/leon.jpeg"
+        preco: 279.99,
+        imagem: "/src/assets/img/leon.jpeg"
     },
 
     {
         nome: "Malenia Elden Ring",
-        preco: 459.90,
-        imagem: "./src/assets/img/malenia.jpeg"
+        preco: 459.99,
+        imagem: "/src/assets/img/malenia.jpeg"
     }
 
 ];
@@ -88,9 +88,13 @@ const divCarrinho = document.getElementById("carrinho");
 if(divCarrinho){
     carrinho.forEach(item => {
         divCarrinho.innerHTML += `
-            <p>
-                ${item.produto} - R$ ${item.preco}
-            </p>
+            <div class="item-carrinho">
+                <img src="${item.imagem}" alt="${item.nome}">
+                <div class="info-carrinho">
+                    <h3>${item.nome}</h3>
+                    <p>R$ ${item.preco.toFixed(2)}</p>
+                </div>
+            </div>
         `;
     });
 }
