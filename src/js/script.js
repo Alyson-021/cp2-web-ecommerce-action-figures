@@ -13,31 +13,31 @@ const produtos = [
     {
         nome: "Dante DMC 5",
         preco: 299.99,
-        imagem: "./assets/img/dante.jpeg"
+        imagem: "./src/assets/img/dante.jpeg"
     },
 
     {
         nome: "Ellie TLOU 2",
         preco: 349.90,
-        imagem: "./assets/img/ellie.jpeg"
+        imagem: "./src/assets/img/ellie.jpeg"
     },
 
     {
         nome: "Kratos GOW",
         preco: 399.90,
-        imagem: "./assets/img/kratos.jpeg"
+        imagem: "./src/assets/img/kratos.jpeg"
     },
 
     {
         nome: "Leon RE 4",
         preco: 279.90,
-        imagem: "./assets/img/leon.jpeg"
+        imagem: "./src/assets/img/leon.jpeg"
     },
 
     {
         nome: "Malenia Elden Ring",
         preco: 459.90,
-        imagem: "./assets/img/malenia.jpeg"
+        imagem: "./src/assets/img/malenia.jpeg"
     }
 
 ];
