@@ -66,35 +66,31 @@ if(sectionProdutos){
     });
 }
 
-const carrinho = [
-    {
-        produto: "Dante",
-        preco: 300
-    },
+function adicionarCarrinho(nomeProduto){
 
-    {
-        produto: "Ellie",
-        preco: 250
-    },
+    const produtoSelecionado = produtos.find(produto => 
+        produto.nome === nomeProduto
+    );
 
-    {
-        produto: "Kratos",
-        preco: 400
-    }
-];
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    carrinho.push(produtoSelecionado);
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    alert("Produto adicionado ao carrinho!");
+}
+
+const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 const divCarrinho = document.getElementById("carrinho");
 
 if(divCarrinho){
-
     carrinho.forEach(item => {
-
         divCarrinho.innerHTML += `
-        
             <p>
                 ${item.produto} - R$ ${item.preco}
             </p>
-        
         `;
     });
 }
