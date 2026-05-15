@@ -21,3 +21,10 @@ Projeto ecommerce de action figures desenvolvido para a disciplina de Web Develo
 ## 👨‍💻 Desenvolvido para
 
 Checkpoint 2 - Web Development - FIAP
+
+## 🌐 Deploy
+
+GitHub Pages:
+https://alyson-021.github.io/cp2-web-ecommerce-action-figures/
+
+---

@@ -58,7 +58,7 @@ if(sectionProdutos){
 
                 <p>R$ ${produto.preco}</p>
 
-                <button>Comprar</button>
+                <button onclick="adicionarCarrinho('${produto.nome}')">Comprar</button>
 
             </div>
         
