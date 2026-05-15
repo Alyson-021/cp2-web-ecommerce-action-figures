@@ -72,3 +72,60 @@ button{
 .card:hover{
     transform: scale(1.05);
 }
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.container-loja{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.carrinho-container,
+.resumo-container{
+
+    background-color: #222;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    width: 400px;
+}
+
+#carrinho p{
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: cyan;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.sobre-container{
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre-container h2{
+    margin-bottom: 20px;
+}
+
+.sobre-container p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
