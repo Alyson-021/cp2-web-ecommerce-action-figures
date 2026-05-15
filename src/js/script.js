@@ -95,6 +95,18 @@ if(divCarrinho){
     });
 }
 
+const btnLimpar = document.getElementById("btnLimpar");
+
+if(btnLimpar){
+
+    btnLimpar.addEventListener("click", () => {
+
+        localStorage.removeItem("carrinho");
+
+        location.reload();
+    });
+}
+
 const total = carrinho.reduce((acumulador, item) => {
 
     return acumulador + item.preco;
