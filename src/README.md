@@ -8,3 +8,16 @@ Projeto ecommerce de action figures desenvolvido para a disciplina de Web Develo
 - JavaScript
 - Git
 - GitHub
+
+## ⚡ Funcionalidades
+
+- Cards de produtos com DOM
+- Carrinho de compras
+- Cálculo total com Reduce
+- Desconto de 10%
+- Responsividade
+- Navegação entre páginas
+
+## 👨‍💻 Desenvolvido para
+
+Checkpoint 2 - Web Development - FIAP

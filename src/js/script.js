@@ -110,7 +110,7 @@ const totalHTML = document.getElementById("total");
 if(totalHTML){
 
     totalHTML.innerHTML = `
-        Total: R$ ${total}
+        Total: R$ ${total.toFixed(2)}
     `;
 }
 
