@@ -8,36 +8,40 @@
 // ]
 
 
+const caminhoBase = window.location.pathname.includes("/pages/")
+    ? "../src/assets/img/"
+    : "./src/assets/img/";
+
 const produtos = [
 
     {
         nome: "Dante DMC 5",
         preco: 299.99,
-        imagem: "/src/assets/img/dante.jpeg"
+        imagem: "dante.jpeg"
     },
 
     {
         nome: "Ellie TLOU 2",
         preco: 349.99,
-        imagem: "/src/assets/img/ellie.jpeg"
+        imagem: "ellie.jpeg"
     },
 
     {
         nome: "Kratos GOW",
         preco: 399.99,
-        imagem: "/src/assets/img/kratos.jpeg"
+        imagem: "kratos.jpeg"
     },
 
     {
         nome: "Leon RE 4",
         preco: 279.99,
-        imagem: "/src/assets/img/leon.jpeg"
+        imagem: "leon.jpeg"
     },
 
     {
         nome: "Malenia Elden Ring",
         preco: 459.99,
-        imagem: "/src/assets/img/malenia.jpeg"
+        imagem: "malenia.jpeg"
     }
 
 ];
@@ -52,7 +56,7 @@ if(sectionProdutos){
         
             <div class="card">
 
-                <img src="${produto.imagem}" alt="${produto.nome}">
+                <img src="${caminhoBase}${produto.imagem}" alt="${produto.nome}">
 
                 <h2>${produto.nome}</h2>
 
@@ -89,7 +93,7 @@ if(divCarrinho){
     carrinho.forEach(item => {
         divCarrinho.innerHTML += `
             <div class="item-carrinho">
-                <img src="${item.imagem}" alt="${item.nome}">
+                <img src="${caminhoBase}${item.imagem}" alt="${item.nome}">
                 <div class="info-carrinho">
                     <h3>${item.nome}</h3>
                     <p>R$ ${item.preco.toFixed(2)}</p>
